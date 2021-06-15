@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Annotation profile for beerstock" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -24,9 +25,16 @@
         </processorPath>
         <module name="beerstock" />
       </profile>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="maven" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="beerstock" target="14" />
+      <module name="beerstock" target="11" />
+      <module name="maven" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
