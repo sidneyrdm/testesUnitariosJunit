@@ -81,7 +81,7 @@ public class BeerServiceTest {
     }
 
     @Test
-    void whenNotRegisteredBeerNameIsGivenThenThrowAnException() throws BeerNotFoundException {
+    void whenNotRegisteredBeerNameIsGivenThenThrowAnException() {
 
         BeerDTO foundBeerDTO = BeerDTOBuilder.builder().build().toBeerDTO();
 
